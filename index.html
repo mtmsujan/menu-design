@@ -59,6 +59,13 @@
         </header>
     </section>
 
-   
+   <script>
+        const naveLink = document.querySelector(".nave-link");
+       function onToggleMenu(e){
+        // console.log(e.name);
+        e.name === "menu" ? e.name = "close" : e.name = "menu";
+        naveLink.classList.toggle("top-[7%]");
+       }
+   </script>
 </body>
 </html>
