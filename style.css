@@ -31,3 +31,9 @@
 .menu-item:hover {
     color: #6a11cb; /* Change text color on hover */
 }
+
+
+/* Custom hover color */
+.custom-hover:hover {
+    background-color: #e0f7fa; /* or any color you prefer */
+}

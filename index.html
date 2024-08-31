@@ -104,10 +104,20 @@
             </nav>
         </header>
     </section>
+
+    <!-- Hero Section 3 -->
+    <section class="overflow-hidden mt-10">
+        <!-- Header -->
+        <header class="bg-white shadow-lg">
+           
+        </header>
+    </section>
+    
+    
     
     
 
-   <script>
+    <script>
         const naveLink = document.querySelector(".nave-link");
        function onToggleMenu(e){
         // console.log(e.name);
@@ -115,12 +125,18 @@
         naveLink.classList.toggle("top-[30%]");
        }
        
+       <!-- Menu Toggle Script -->
         const button = document.querySelector('#menu-button');
             const menu = document.querySelector('#menu');
             button.addEventListener('click', () => {
             menu.classList.toggle('hidden');
         });
-        
-   </script>
+
+        const menuBtn = document.getElementById('menu-btn');
+        const menu3 = document.getElementById('menu3');
+        menuBtn.addEventListener('click', () => {
+            menu3.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
