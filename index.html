@@ -114,7 +114,12 @@
         e.name === "menu" ? e.name = "close" : e.name = "menu";
         naveLink.classList.toggle("top-[30%]");
        }
-
+       
+        const button = document.querySelector('#menu-button');
+            const menu = document.querySelector('#menu');
+            button.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
         
    </script>
 </body>
