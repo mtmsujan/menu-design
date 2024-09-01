@@ -339,6 +339,18 @@
             menu2.classList.toggle('hidden');
         });
         
+        // header section 5
+        // Toggle mobile menu visibility
+        document.getElementById('mobile-menu-button').onclick = function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        };
+
+        // Toggle user profile dropdown
+        document.getElementById('user-menu-button').onclick = function() {
+            const dropdown = this.nextElementSibling;
+            dropdown.classList.toggle('hidden');
+        };
     </script>
 </body>
 </html>
