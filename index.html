@@ -308,7 +308,21 @@
         <div class="max-w-[98%] mx-auto px-4 h-[20vh] bg-gray-200 rounded-b-lg mb-[100px]"></div>
     </section>
     
-
+    <!-- Header Section 6 -->
+    <section class="overflow-hidden mt-10">
+        <header class="max-w-[98%] mx-auto bg-white shadow-lg">
+            <nav class="relative px-4 py-4 flex justify-between items-center bg-white">
+                <a class="text-3xl font-bold leading-none" href="#">
+                    <svg class="h-10" alt="logo" viewBox="0 0 100 100">
+                        <text x="50%" y="50%" text-anchor="middle" fill="#000000" font-size="40px" font-family="Arial, Helvetica, sans-serif">Logo</text>
+                    </svg>
+                </a>
+               
+            </nav>
+            
+        </header>
+        <div class="max-w-[98%] mx-auto px-4 h-[20vh] bg-gray-200 rounded-b-lg mb-[100px]"></div>
+    </section>
     
     <script>
         const naveLink = document.querySelector(".nave-link");
@@ -351,6 +365,15 @@
             const dropdown = this.nextElementSibling;
             dropdown.classList.toggle('hidden');
         };
+
+
+        document.querySelector('.navbar-burger').addEventListener('click', () => {
+            document.querySelector('.navbar-menu').classList.remove('hidden');
+        });
+
+        document.querySelector('.navbar-close').addEventListener('click', () => {
+            document.querySelector('.navbar-menu').classList.add('hidden');
+        });
     </script>
 </body>
 </html>
